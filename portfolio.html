@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #020000;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 10px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            animation: fadeIn 3s ease-in-out;
+        }
+        
+        img{
+            width: 100px;
+            height:100px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: #1ca0a4;
+        }
+       .img:hover{
+        width: 10%;
+        height: 10%;
+       }
+        section {
+            padding: 50px 0;
+            background-color: white;
+            margin-bottom: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #333;
+        }
+
+        section p, section ul {
+            text-align: center;
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .project {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            color: #000c01;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 1.1em;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        form button:hover {
+            background-color: #000000;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>V Vishnuprasanth</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about">
+        <div style="margin-left: 50px;margin-right; text-align: center;">
+        <div class="container"style="margin-right=10px">
+            <h2>About Me</h2>
+            <image src="lenovo/img.jpj-removebg-preview.png" class="img" style="transition: width 1s,height 1s;"></image>
+            </div>
+            <p> <b>Hi, I'm V Vishnuprasanth. I'm currently pursuing my engineering degree at Sri Krishna College of Engineering and Technology. I have a deep passion for technology and innovation, which drives me to master the skills and knowledge needed to excel in my field. I enjoy balancing rigorous academic work with hands-on projects, as I believe that both theoretical understanding and practical experience are crucial for success. I'm always eager to take on new challenges and stay updated with the latest industry advancements. I strive to embody the spirit of a forward-thinking engineer, ready to make significant contributions to the technological landscape.</b></p>
+    </div>
+    </section>
+    <section id="skills">
+        <div class="container"style="text-align:center">
+            <h2>Skills</h2>
+            <h3>C++</h3>
+            <h3>Java</h3>
+            <h3>Html</h3>
+            <h3>Css</h3>
+            <h3>Js</h3>
+            <img src="lenovo/htmlcssjs-details-removebg-preview.png"style="height=500px; width: 500px;">
+        
+            
+       
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>portfolio website</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>deaf and dumb breaker</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" style="color:#1ca0a4">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+               <div style="display:flex; text-align: center; padding-left:160px;">
+                <a href="https://in.linkedin.com/"><img src="lenovo/images-removebg-preview.png"></a>
+                <a href="https://www.instagram.com/"><img src="lenovo/Instagram-logo-sign-colored-removebg-preview.png"></a>
+                <a href="https://github.com/"><img src="lenovo/download__1_-removebg-preview.png"></a>
+            </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
